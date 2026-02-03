@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <at t="60.0">
+        <shutdown module="drone2"/>
+        <shutdown module="drone6"/>
+    </at>   
+    
+    <at t="70.0">
+        <startup module="drone2"/>
+        <startup module="drone6"/>
+    </at>
+    
+    <at t="90.0">
+        <shutdown module="drone3"/>
+        <shutdown module="drone5"/>
+    </at>    
+    
+    <at t="120.0">
+        <startup module="drone3"/>
+        <startup module="drone5"/>
+    </at>      
+
+    <at t="180.0">
+        <shutdown module="drone1"/>
+        <shutdown module="drone4"/>
+    </at>
+
+    <at t="240.0">
+        <startup module="drone1"/>
+        <startup module="drone4"/>
+    </at>
+</scenario>
